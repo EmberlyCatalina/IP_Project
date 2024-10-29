@@ -1,2 +1,2 @@
 # IP_Project
-Fulton VFD 
+Volunteer-Fire-Dept-Template
