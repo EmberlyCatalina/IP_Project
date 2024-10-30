@@ -1,22 +1,91 @@
-html {
-  font-size: 14px;
+/* Scrolling Banner */
+.scrolling-banner {
+  background-color: darkred;
+  color: white;
+  font-weight: bold;
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Adds spacing between elements in the banner */
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
+.scrolling-banner .banner-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-banner 20s linear infinite; /* Slowed down to 20s */
+}
+
+.scrolling-banner.paused .banner-text {
+  animation-play-state: paused;
+}
+
+/* Scrolling effect */
+@keyframes scroll-banner {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+/* Pause/Play Button Styling */
+.banner-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 15px;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+.banner-button:hover,
+.banner-button:focus {
+  color: yellow;
+  outline: none;
 }
 
-body {
-  margin-bottom: 60px;
+/* Pause/Play Label Styling */
+.banner-label {
+  color: white;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+
+/* Header styling */
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.header-container img {
+  height: 80px;
+  margin-right: 15px;
+}
+
+.header-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.navbar-links {
+  background-color: #fff;
+  border-bottom: 2px solid #ccc;
+}
+
+.navbar-links .nav-link {
+  color: firebrick !important;
+  font-weight: bold;
+}
+
+.navbar-links .nav-link:hover {
+  color: darkred !important;
 }
