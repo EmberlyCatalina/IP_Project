@@ -89,3 +89,8 @@
 .navbar-links .nav-link:hover {
   color: darkred !important;
 }
+.fire-station-image img {
+  max-width: 100%; /* Ensures the image doesn't overflow */
+  margin: 20px auto; /* Centers the image with some space around it */
+  display: block;
+}

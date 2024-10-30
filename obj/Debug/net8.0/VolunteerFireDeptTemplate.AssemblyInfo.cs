@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VolunteerFireDeptTemplate")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa2bdc3304509bf1c35a47770bf29f5c42b5a356")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc23bd0c562dec731fd775992559675ffce22239")]
 [assembly: System.Reflection.AssemblyProductAttribute("VolunteerFireDeptTemplate")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VolunteerFireDeptTemplate")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

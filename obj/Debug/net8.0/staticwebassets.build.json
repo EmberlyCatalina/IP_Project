@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Yfma/1EvpBc16663JRgEmWFTNaofnrCrpjbXARpMJgs=",
+  "Hash": "Ota3OuYkQHXQULyVXg9Cp9quIK3Pj/j36X+PXz0CEOs=",
   "Source": "VolunteerFireDeptTemplate",
   "BasePath": "_content/VolunteerFireDeptTemplate",
   "Mode": "Default",
@@ -243,6 +243,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\fire-badge.png"
+    },
+    {
+      "Identity": "C:\\Users\\William\\Desktop\\Fall 2024\\Internet Programing\\IP_Project\\IP_Project\\VolunteerFireDeptTemplate\\wwwroot\\images\\Fire-station.png",
+      "SourceId": "VolunteerFireDeptTemplate",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\William\\Desktop\\Fall 2024\\Internet Programing\\IP_Project\\IP_Project\\VolunteerFireDeptTemplate\\wwwroot\\",
+      "BasePath": "_content/VolunteerFireDeptTemplate",
+      "RelativePath": "images/Fire-station.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Fire-station.png"
     },
     {
       "Identity": "C:\\Users\\William\\Desktop\\Fall 2024\\Internet Programing\\IP_Project\\IP_Project\\VolunteerFireDeptTemplate\\wwwroot\\js\\site.js",

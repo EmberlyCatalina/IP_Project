@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\William\\Desktop\\Fall 2024\\Internet Programing\\IP_Project\\IP_Project\\VolunteerFireDeptTemplate\\wwwroot\\images\\Fire-station.png",
+      "PackagePath": "staticwebassets\\images\\Fire-station.png"
+    },
+    {
       "Id": "C:\\Users\\William\\Desktop\\Fall 2024\\Internet Programing\\IP_Project\\IP_Project\\VolunteerFireDeptTemplate\\wwwroot\\images\\fire-badge.png",
       "PackagePath": "staticwebassets\\images\\fire-badge.png"
     },
