@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\William\\Desktop\\Fall 2024\\Internet Programing\\IP_Project\\IP_Project\\VolunteerFireDeptTemplate\\VolunteerFireDeptTemplate.csproj": {}
+    "C:\\Users\\Alex\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\VolunteerFireDeptTemplate.csproj": {}
   },
   "projects": {
-    "C:\\Users\\William\\Desktop\\Fall 2024\\Internet Programing\\IP_Project\\IP_Project\\VolunteerFireDeptTemplate\\VolunteerFireDeptTemplate.csproj": {
+    "C:\\Users\\Alex\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\VolunteerFireDeptTemplate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\William\\Desktop\\Fall 2024\\Internet Programing\\IP_Project\\IP_Project\\VolunteerFireDeptTemplate\\VolunteerFireDeptTemplate.csproj",
+        "projectUniqueName": "C:\\Users\\Alex\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\VolunteerFireDeptTemplate.csproj",
         "projectName": "VolunteerFireDeptTemplate",
-        "projectPath": "C:\\Users\\William\\Desktop\\Fall 2024\\Internet Programing\\IP_Project\\IP_Project\\VolunteerFireDeptTemplate\\VolunteerFireDeptTemplate.csproj",
-        "packagesPath": "C:\\Users\\William\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\William\\Desktop\\Fall 2024\\Internet Programing\\IP_Project\\IP_Project\\VolunteerFireDeptTemplate\\obj\\",
+        "projectPath": "C:\\Users\\Alex\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\VolunteerFireDeptTemplate.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alex\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\William\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -42,6 +42,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

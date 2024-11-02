@@ -29,3 +29,34 @@ C:\Users\William\Desktop\Fall 2024\Internet Programing\IP_Project\IP_Project\Vol
 C:\Users\William\Desktop\Fall 2024\Internet Programing\IP_Project\IP_Project\VolunteerFireDeptTemplate\obj\Debug\net8.0\VolunteerFireDeptTemplate.pdb
 C:\Users\William\Desktop\Fall 2024\Internet Programing\IP_Project\IP_Project\VolunteerFireDeptTemplate\obj\Debug\net8.0\VolunteerFireDeptTemplate.genruntimeconfig.cache
 C:\Users\William\Desktop\Fall 2024\Internet Programing\IP_Project\IP_Project\VolunteerFireDeptTemplate\obj\Debug\net8.0\ref\VolunteerFireDeptTemplate.dll
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\bin\Debug\net8.0\appsettings.json
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\bin\Debug\net8.0\VolunteerFireDeptTemplate.staticwebassets.runtime.json
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\bin\Debug\net8.0\VolunteerFireDeptTemplate.exe
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\bin\Debug\net8.0\VolunteerFireDeptTemplate.deps.json
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\bin\Debug\net8.0\VolunteerFireDeptTemplate.runtimeconfig.json
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\bin\Debug\net8.0\VolunteerFireDeptTemplate.dll
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\bin\Debug\net8.0\VolunteerFireDeptTemplate.pdb
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\VolunteerFireDeptTemplate.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\VolunteerFireDeptTemplate.AssemblyInfoInputs.cache
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\VolunteerFireDeptTemplate.AssemblyInfo.cs
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\VolunteerFireDeptTemplate.csproj.CoreCompileInputs.cache
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\VolunteerFireDeptTemplate.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\VolunteerFireDeptTemplate.RazorAssemblyInfo.cache
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\VolunteerFireDeptTemplate.RazorAssemblyInfo.cs
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\VolunteerFireDeptTemplate.sourcelink.json
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\staticwebassets\msbuild.VolunteerFireDeptTemplate.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\staticwebassets\msbuild.build.VolunteerFireDeptTemplate.props
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.VolunteerFireDeptTemplate.props
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.VolunteerFireDeptTemplate.props
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\scopedcss\bundle\VolunteerFireDeptTemplate.styles.css
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\scopedcss\projectbundle\VolunteerFireDeptTemplate.bundle.scp.css
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\VolunteerFireDeptTemplate.dll
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\refint\VolunteerFireDeptTemplate.dll
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\VolunteerFireDeptTemplate.pdb
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\VolunteerFireDeptTemplate.genruntimeconfig.cache
+C:\Users\Alex\OneDrive - Texas A&M University-Corpus Christi\Documents\FALL2024\Internet Programming\Group_Project\IP_Project\obj\Debug\net8.0\ref\VolunteerFireDeptTemplate.dll
