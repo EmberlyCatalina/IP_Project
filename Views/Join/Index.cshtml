@@ -1,0 +1,52 @@
+@model VolunteerFireDeptTemplate.Models.Volunteer
+
+@{
+    ViewData["Title"] = "Join Us";
+}
+
+<h2>Join as a Volunteer</h2>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["Message"]
+    </div>
+}
+
+<form asp-action="Index" method="post" class="form-horizontal">
+    <div class="form-group">
+        <label asp-for="FullName" class="control-label"></label>
+        <input asp-for="FullName" class="form-control" />
+        <span asp-validation-for="FullName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email" class="control-label"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PhoneNumber" class="control-label"></label>
+        <input asp-for="PhoneNumber" class="form-control" />
+        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Experience" class="control-label"></label>
+        <textarea asp-for="Experience" class="form-control" rows="4"></textarea>
+        <span asp-validation-for="Experience" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Availability" class="control-label"></label>
+        <textarea asp-for="Availability" class="form-control" rows="3"></textarea>
+        <span asp-validation-for="Availability" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

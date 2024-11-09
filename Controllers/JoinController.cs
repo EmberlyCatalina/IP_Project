@@ -1,8 +1,25 @@
 using Microsoft.AspNetCore.Mvc;
-public class JoinController : Controller
+using VolunteerFireDeptTemplate.Models;
+
+namespace VolunteerFireDeptTemplate.Controllers
 {
-    public IActionResult Index()
+    public class JoinController : Controller
     {
-        return View();
+        [HttpGet]
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Index(Volunteer volunteer)
+        {
+            if (ModelState.IsValid)
+            {
+                TempData["Message"] = "Thank you for signing up!";
+                return RedirectToAction("Index");
+            }
+            return View(volunteer);
+        }
     }
 }

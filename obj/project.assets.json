@@ -715,19 +715,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Alex\\.nuget\\packages\\": {}
+    "C:\\Users\\William\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Alex\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\VolunteerFireDeptTemplate.csproj",
+      "projectUniqueName": "C:\\Users\\William\\Desktop\\Fall 2024\\Internet Programing\\IP_Project\\group_project\\IP_Project\\VolunteerFireDeptTemplate.csproj",
       "projectName": "VolunteerFireDeptTemplate",
-      "projectPath": "C:\\Users\\Alex\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\VolunteerFireDeptTemplate.csproj",
-      "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Alex\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\obj\\",
+      "projectPath": "C:\\Users\\William\\Desktop\\Fall 2024\\Internet Programing\\IP_Project\\group_project\\IP_Project\\VolunteerFireDeptTemplate.csproj",
+      "packagesPath": "C:\\Users\\William\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\William\\Desktop\\Fall 2024\\Internet Programing\\IP_Project\\group_project\\IP_Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\William\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"

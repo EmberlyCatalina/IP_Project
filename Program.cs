@@ -1,27 +1,31 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
+// Add services to the container
+builder.Services.AddControllersWithViews(); // Use AddControllersWithViews for MVC apps
+
+// Configure HTTPS redirection
+builder.Services.AddHttpsRedirection(options =>
+{
+    options.HttpsPort = 7149;
+});
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Enable HTTPS redirection in non-development environments
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    app.UseHttpsRedirection();
 }
 
-app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
 
-app.UseAuthorization();
-
+// Ensure you have a default route setup
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+// Map your controllers
+app.MapControllers();
 
 app.Run();

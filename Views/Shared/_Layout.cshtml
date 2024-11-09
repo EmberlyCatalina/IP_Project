@@ -3,32 +3,22 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - VolunteerFireDeptTemplate</title>
+    <title>@ViewData["Title"] - Volunteer Fire Dept</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
-    <!-- Scrolling Banner with Pause/Play Button and Label -->
-    <div class="scrolling-banner" id="scrollingBanner">
-        <span class="banner-text">
-            🔥 Fire Ban In Effect 🔥 &nbsp; 🔥 Fire Ban In Effect 🔥 &nbsp; 🔥 Fire Ban In Effect 🔥 &nbsp; 🔥 Fire Ban In Effect 🔥
-        </span>
-        <button class="banner-button" id="toggleButton" aria-label="Pause scrolling banner">❚❚</button>
-        <span class="banner-label">Banner Pause/Play</span>
-    </div>
-
     <header>
-        <div class="header-container">
-            <img src="~/images/fire-badge.png" alt="Fire Department Badge" />
-            <h1 class="header-title">Your Local Volunteer Fire Department</h1>
-        </div>
-
-        <nav class="navbar navbar-expand-lg navbar-links">
-            <div class="container justify-content-center">
-                <ul class="navbar-nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="~/images/fire-badge.png" alt="Fire Badge" width="40" height="40" class="d-inline-block align-middle" />
+                    <span class="ml-2">Volunteer Fire Dept</span>
+                </a>
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" asp-controller="About" asp-action="Index">About</a></li>
                     <li class="nav-item"><a class="nav-link" asp-controller="Join" asp-action="Index">Join</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="About" asp-action="Index">About</a></li>
                     <li class="nav-item"><a class="nav-link" asp-controller="PhotoGallery" asp-action="Index">Photo Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" asp-controller="Contact" asp-action="Index">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" asp-controller="FAQ" asp-action="Index">FAQ</a></li>
@@ -37,11 +27,19 @@
         </nav>
     </header>
 
-    <div class="container">
+    <!-- Burn Ban Notification Banner -->
+    <div class="scrolling-banner" id="scrollingBanner">
+        <span class="banner-text">
+            🔥 Fire Ban In Effect 🔥 &nbsp; 🔥 Fire Ban In Effect 🔥 &nbsp; 🔥 Fire Ban In Effect 🔥 &nbsp; 🔥 Fire Ban In Effect 🔥
+        </span>
+        <button class="banner-button" id="toggleButton" aria-label="Pause scrolling banner">❚❚</button>
+    </div>
+
+    <div class="container mt-4">
         @RenderBody()
     </div>
 
-    <footer class="border-top footer text-muted mt-4">
+    <footer class="text-muted mt-4">
         <div class="container">
             &copy; 2024 - VolunteerFireDeptTemplate
         </div>
@@ -50,8 +48,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+
+    <!-- JavaScript to Control the Scrolling Banner -->
     <script>
-        // JavaScript to handle pause/play button
         const toggleButton = document.getElementById('toggleButton');
         const scrollingBanner = document.getElementById('scrollingBanner');
         let isPaused = false;
@@ -69,6 +69,5 @@
             }
         });
     </script>
-    @RenderSection("Scripts", required: false)
 </body>
 </html>

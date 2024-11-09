@@ -1,96 +1,44 @@
-/* Scrolling Banner */
 .scrolling-banner {
-  background-color: darkred;
-  color: white;
+  background-color: #b30000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
   font-weight: bold;
-  padding: 10px 0;
-  overflow: hidden;
-  white-space: nowrap;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px; /* Adds spacing between elements in the banner */
+  overflow: hidden;
 }
-
-.scrolling-banner .banner-text {
+.banner-text {
   display: inline-block;
-  padding-left: 100%;
-  animation: scroll-banner 20s linear infinite; /* Slowed down to 20s */
+  white-space: nowrap;
+  animation: scroll 15s linear infinite;
 }
-
-.scrolling-banner.paused .banner-text {
+.banner-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.banner-label {
+  display: none;
+}
+.paused .banner-text {
   animation-play-state: paused;
 }
 
-/* Scrolling effect */
-@keyframes scroll-banner {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-/* Pause/Play Button Styling */
-.banner-button {
-  background-color: transparent;
-  border: none;
-  color: white;
+.mission-statement {
   font-size: 1.2rem;
-  cursor: pointer;
-  margin-left: 15px;
-}
-
-.banner-button:hover,
-.banner-button:focus {
-  color: yellow;
-  outline: none;
-}
-
-/* Pause/Play Label Styling */
-.banner-label {
-  color: white;
-  font-size: 1rem;
-  font-weight: normal;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
 }
 
 
-/* Header styling */
-.header-container {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-}
-
-.header-container img {
-  height: 80px;
-  margin-right: 15px;
-}
-
-.header-title {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #333;
-  margin: 0;
-}
-
-.navbar-links {
-  background-color: #fff;
-  border-bottom: 2px solid #ccc;
-}
-
-.navbar-links .nav-link {
-  color: firebrick !important;
-  font-weight: bold;
-}
-
-.navbar-links .nav-link:hover {
-  color: darkred !important;
-}
-.fire-station-image img {
-  max-width: 100%; /* Ensures the image doesn't overflow */
-  margin: 20px auto; /* Centers the image with some space around it */
-  display: block;
+@keyframes scroll {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
 }
