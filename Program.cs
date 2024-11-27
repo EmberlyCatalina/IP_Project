@@ -1,3 +1,7 @@
+using VolunteerFireDeptTemplate.Database.VolunteerFireDeptTemplate.Data;
+using Microsoft.EntityFrameworkCore.SqlServer;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container
@@ -8,6 +12,12 @@ builder.Services.AddHttpsRedirection(options =>
 {
     options.HttpsPort = 7149;
 });
+
+
+builder.Services.AddDbContext<VolunteerDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
 
 var app = builder.Build();
 
@@ -27,5 +37,7 @@ app.MapControllerRoute(
 
 // Map your controllers
 app.MapControllers();
+
+
 
 app.Run();
