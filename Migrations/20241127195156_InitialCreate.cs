@@ -14,7 +14,9 @@ namespace VolunteerFireDeptTemplate.Migrations
                 name: "Volunteers",
                 columns: table => new
                 {
-                    FullName = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FullName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Experience = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -22,7 +24,7 @@ namespace VolunteerFireDeptTemplate.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Volunteers", x => x.FullName);
+                    table.PrimaryKey("PK_Volunteers", x => x.Id);
                 });
         }
 

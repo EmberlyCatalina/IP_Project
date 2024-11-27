@@ -3,8 +3,6 @@
     using Microsoft.EntityFrameworkCore;
     using Models;
 
-namespace VolunteerFireDeptTemplate.Data
-{
     public class VolunteerDbContext : DbContext
     {
         public VolunteerDbContext(DbContextOptions<VolunteerDbContext> options): base(options) { }
@@ -13,4 +11,3 @@ namespace VolunteerFireDeptTemplate.Data
     }
 }
 
-}

@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Huntm\\Source\\Repos\\IP_Project\\VolunteerFireDeptTemplate.csproj": {}
+    "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\VolunteerFireDeptTemplate.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Huntm\\Source\\Repos\\IP_Project\\VolunteerFireDeptTemplate.csproj": {
+    "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\VolunteerFireDeptTemplate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Huntm\\Source\\Repos\\IP_Project\\VolunteerFireDeptTemplate.csproj",
+        "projectUniqueName": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\VolunteerFireDeptTemplate.csproj",
         "projectName": "VolunteerFireDeptTemplate",
-        "projectPath": "C:\\Users\\Huntm\\Source\\Repos\\IP_Project\\VolunteerFireDeptTemplate.csproj",
-        "packagesPath": "C:\\Users\\Huntm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Huntm\\Source\\Repos\\IP_Project\\obj\\",
+        "projectPath": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\VolunteerFireDeptTemplate.csproj",
+        "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Huntm\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,17 +46,17 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[8.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[8.0.2, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[8.0.2, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
@@ -80,6 +74,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"

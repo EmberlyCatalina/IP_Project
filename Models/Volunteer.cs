@@ -4,6 +4,8 @@ namespace VolunteerFireDeptTemplate.Models
 {
     public class Volunteer
     {
+        [Key] // primary key
+        public int Id { get; set; }  // Add an Id property to serve as the primary key
 
         [Required(ErrorMessage = "Full Name is required")]
         [Display(Name = "Full Name")]

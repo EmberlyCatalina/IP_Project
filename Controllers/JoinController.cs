@@ -2,11 +2,21 @@ using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using System.Net.Mail;
 using VolunteerFireDeptTemplate.Models;
+using VolunteerFireDeptTemplate.Database;
+using System.Threading.Tasks; // Needed for async functionality
 
 namespace VolunteerFireDeptTemplate.Controllers
 {
     public class JoinController : Controller
     {
+        private readonly VolunteerDbContext _context;
+
+        // Inject VolunteerDbContext into the controller
+        public JoinController(VolunteerDbContext context)
+        {
+            _context = context;
+        }
+
         // GET: /Join
         public IActionResult Index()
         {
@@ -16,10 +26,17 @@ namespace VolunteerFireDeptTemplate.Controllers
         // POST: /Join
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Index(Volunteer volunteer)
+        public async Task<IActionResult> Index(Volunteer volunteer)
         {
+            // Check if the model is valid
             if (ModelState.IsValid)
             {
+                // Add the new volunteer to the Volunteers DbSet
+                _context.Volunteers.Add(volunteer);
+
+                // Save the changes to the database asynchronously
+                await _context.SaveChangesAsync();
+                
                 // Call the method to send the email
                 SendEmail(volunteer);
 

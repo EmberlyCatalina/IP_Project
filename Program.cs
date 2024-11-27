@@ -1,4 +1,4 @@
-using VolunteerFireDeptTemplate.Database.VolunteerFireDeptTemplate.Data;
+using VolunteerFireDeptTemplate.Database;
 using Microsoft.EntityFrameworkCore.SqlServer;
 using Microsoft.EntityFrameworkCore;
 

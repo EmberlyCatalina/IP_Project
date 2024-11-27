@@ -4,14 +4,14 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using VolunteerFireDeptTemplate.Database.VolunteerFireDeptTemplate.Data;
+using VolunteerFireDeptTemplate.Database;
 
 #nullable disable
 
 namespace VolunteerFireDeptTemplate.Migrations
 {
     [DbContext(typeof(VolunteerDbContext))]
-    [Migration("20241127031825_InitialCreate")]
+    [Migration("20241127195156_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -19,15 +19,18 @@ namespace VolunteerFireDeptTemplate.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.0")
+                .HasAnnotation("ProductVersion", "8.0.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
             modelBuilder.Entity("VolunteerFireDeptTemplate.Models.Volunteer", b =>
                 {
-                    b.Property<string>("FullName")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Availability")
                         .IsRequired()
@@ -41,11 +44,15 @@ namespace VolunteerFireDeptTemplate.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("FullName");
+                    b.HasKey("Id");
 
                     b.ToTable("Volunteers");
                 });
