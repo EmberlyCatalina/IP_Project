@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Sign Up Success";
+}
+
+<h2>Sign Up Successful!</h2>
+
+<p>You have successfully signed up. Redirecting to the login page...</p>
+
+<script>
+    // Redirect to the login page after 2 seconds
+    setTimeout(function() {
+        window.location.href = '@Url.Action("Login", "Account")';
+    }, 2000); // 2000 milliseconds = 2 seconds
+</script>

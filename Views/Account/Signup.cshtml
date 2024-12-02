@@ -4,6 +4,29 @@
 
 <h2>Sign Up</h2>
 
+<!-- Display success message after sign-up -->
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+
+    <script>
+        // Redirect to the login page after 2 seconds
+        setTimeout(function() {
+            window.location.href = '@Url.Action("Login", "Account")';
+        }, 2000); // 2000 milliseconds = 2 seconds
+    </script>
+}
+
+<!-- Display validation errors from ModelState -->
+@foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+{
+    <div class="alert alert-danger">
+        @error.ErrorMessage
+    </div>
+}
+
 <form method="post" action="/Account/SignUp">
     <div>
         <label>Name:</label>
@@ -16,6 +39,10 @@
     <div>
         <label>Password:</label>
         <input type="password" name="Password" required />
+    </div>
+    <div>
+        <label>Confirm Password:</label>
+        <input type="password" name="ConfirmPassword" required />
     </div>
     <button type="submit">Sign Up</button>
 </form>
