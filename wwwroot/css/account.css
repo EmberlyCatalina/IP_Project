@@ -1,0 +1,62 @@
+/* Center the form */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Style the form */
+.form-container form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for the form */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    max-width: 400px; /* Limit the width */
+    width: 100%;
+}
+
+/* Style the input fields */
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; /* Space between fields */
+    border-radius: 5px; /* Rounded corners for the input fields */
+    border: 1px solid #ccc; /* Light border */
+    font-size: 16px;
+}
+
+/* Focus state for the input fields */
+.form-container input:focus {
+    outline: none;
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Light blue glow on focus */
+}
+
+/* Style the buttons */
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #b30000;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Small screen responsiveness */
+@media (max-width: 768px) {
+    .form-container form {
+        padding: 15px;
+    }
+
+    .form-container input, .form-container button {
+        font-size: 14px;
+    }
+}

@@ -1,9 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authentication; // Required for managing authentication
 using Microsoft.AspNetCore.Identity; // Required for PasswordHasher
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using VolunteerFireDeptTemplate.Database;
 using VolunteerFireDeptTemplate.Models;
-using System.Linq;
+using System.Security.Claims;
 using System.Text.RegularExpressions;
+using System.Linq;
 
 namespace VolunteerFireDeptTemplate.Controllers
 {
@@ -31,34 +35,36 @@ namespace VolunteerFireDeptTemplate.Controllers
             if (_dbContext.Users.Any(u => u.Email == email))
             {
                 ModelState.AddModelError(string.Empty, "Email is already registered.");
-                return View();
+                return View(); // Stay on the same page if there's an error
             }
 
             // Validate that the passwords match
             if (password != confirmPassword)
             {
                 ModelState.AddModelError(string.Empty, "Passwords do not match.");
-                return View();
+                return View(); // Stay on the same page if passwords don't match
             }
 
             // Validate password against the required standards
             if (!IsPasswordValid(password))
             {
                 ModelState.AddModelError(string.Empty, "Password must be at least 8 characters long, contain an uppercase letter, a number, and a special character.");
-                return View();
+                return View(); // Stay on the same page if the password doesn't meet the requirements
             }
 
+            // Temp user to avoid passing null object and suppress warning
+            var tempUser = new User();  // Temporary user without any real data
             // Hash the password before saving
-            var hashedPassword = _passwordHasher.HashPassword(null, password);  // We don't have a user object yet, so passing null
+            var hashedPassword = _passwordHasher.HashPassword(tempUser, password);  // We don't have a user object yet, so passing null
 
             // Create a new user and add it to the database
             var user = new User { Name = name, Email = email, Password = hashedPassword };
             _dbContext.Users.Add(user);
             _dbContext.SaveChanges();
 
-            // Set success message and redirect to login page
+            // Set success message and redirect to the success page
             TempData["SuccessMessage"] = "You have successfully signed up. Please log in.";
-            return RedirectToAction("SignUpSuccess");
+            return RedirectToAction("SignUpSuccess"); // Redirect only when the user is successfully added
         }
 
         [HttpGet]
@@ -75,28 +81,41 @@ namespace VolunteerFireDeptTemplate.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(string email, string password)
+        public async Task<IActionResult> Login(string email, string password)
         {
             var user = _dbContext.Users.FirstOrDefault(u => u.Email == email);
-            if (user == null)
+            if (user == null || _passwordHasher.VerifyHashedPassword(user, user.Password, password) == PasswordVerificationResult.Failed)
             {
                 ModelState.AddModelError(string.Empty, "Invalid email or password.");
-                return View();
+                return View();  // Return to login page with error
             }
 
-            // Verify the password using the PasswordHasher
-            var result = _passwordHasher.VerifyHashedPassword(user, user.Password, password);
-            if (result == PasswordVerificationResult.Failed)
+            // Create the claims for the authenticated user
+            var claims = new List<Claim>
             {
-                ModelState.AddModelError(string.Empty, "Invalid email or password.");
-                return View();
-            }
+                new Claim(ClaimTypes.Name, user.Name),
+                new Claim(ClaimTypes.Email, user.Email),
+                new Claim("UserId", user.Id.ToString()) // You can also store the User ID for future reference
+            };
 
-            // Store the user's name in TempData to pass it to the Welcome view
-            TempData["UserName"] = user.Name;
+            // Create the identity for the user
+            var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
-            // Redirect to the Welcome action
-            return RedirectToAction("Welcome");
+            // Set the authentication cookie
+            await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
+                new ClaimsPrincipal(claimsIdentity));
+
+            // Pass the user’s name directly to the view
+            return RedirectToAction("Welcome", "Account");
+        }
+
+        public async Task<IActionResult> Logout()
+        {
+            // Sign out the user by clearing the authentication cookie
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+            // Redirect to login page
+            return RedirectToAction("Login");
         }
 
         public IActionResult Welcome()
