@@ -1,44 +1,76 @@
-.scrolling-banner {
-  background-color: #b30000;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
+/* Header styling for the Volunteer Fire Department */
+.header {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #b30000;
+  padding: 15px 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between badge and title */
+}
+
+.site-title {
+  font-size: 2.5rem;
+  color: #b30000;
   font-weight: bold;
-  position: relative;
-  overflow: hidden;
-}
-.banner-text {
-  display: inline-block;
-  white-space: nowrap;
-  animation: scroll 15s linear infinite;
-}
-.banner-button {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.5em;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
-.banner-label {
-  display: none;
-}
-.paused .banner-text {
-  animation-play-state: paused;
+  margin: 0;
 }
 
-.mission-statement {
-  font-size: 1.2rem;
-  max-width: 800px;
-  margin: 20px auto;
+.site-badge {
+  width: 80px; /* Increased badge size */
+  height: auto;
+}
+
+/* Navbar styling */
+.navbar {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 1.25rem; /* Larger font size */
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center navigation links */
+  gap: 20px; /* Space between links */
+}
+
+.navbar-nav .nav-link {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Fire Station Image and Welcome Title */
+.welcome-title {
   text-align: center;
+  font-size: 2rem;
+  margin: 20px 0 10px;
+  color: #b30000;
 }
 
+.fire-station-image {
+  display: block;
+  margin: 0 auto;
+  width: 80%; /* Adjust width relative to the body */
+  max-width: 800px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
 
-@keyframes scroll {
-  from { transform: translateX(100%); }
-  to { transform: translateX(-100%); }
+/* Footer Styling */
+.footer {
+  position: fixed; /* Keep footer at the bottom */
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6c757d;
 }

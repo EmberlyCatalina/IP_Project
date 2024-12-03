@@ -1,0 +1,80 @@
+.contact-page {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.page-header {
+    font-size: 2.5rem;
+    color: #b30000; /* Match the site's theme */
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto 40px auto; /* Add space below the form */
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #1b6ec2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #155a96;
+}
+
+.contact-details-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.map {
+    margin: 0 auto 20px auto; /* Center the map and add spacing */
+}
+
+.map iframe {
+    width: 450px; /* Adjusted size */
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+.contact-details {
+    max-width: 600px;
+    margin: 0 auto; /* Center the contact details */
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.4; /* Reduced spacing between lines */
+}
+
+.contact-details h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #b30000;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    margin: 5px 0; /* Reduced spacing between sentences */
+}

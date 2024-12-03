@@ -1,0 +1,33 @@
+@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<div class="contact-page">
+    <h1 class="page-header">Contact Us</h1>
+
+    <form action="/Contact/Submit" method="POST" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Your Name" class="form-control" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" placeholder="Your Email" class="form-control" required />
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="5" placeholder="Your Message" class="form-control" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+
+    <div class="contact-details-container">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=YOUR_EMBEDDED_MAP_URL_HERE" width="450" height="300" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="contact-details">
+            <h2>Anywhere you are</h2>
+            <p><strong>Street Address:</strong> 123 Volunteer Way</p>
+            <p><strong>City/State:</strong> Texas</p>
+            <p><strong>Phone Number:</strong> (123) 456-7890</p>
+            <p><strong>Fax Number:</strong> (123) 456-7891</p>
+        </div>
+    </div>
+</div>

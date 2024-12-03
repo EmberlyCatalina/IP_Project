@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\VolunteerFireDeptTemplate.csproj": {}
+    "C:\\Users\\William\\Desktop\\Fall 2024\\Internet Programing\\IP Project\\IP_Project\\VolunteerFireDeptTemplate.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\VolunteerFireDeptTemplate.csproj": {
+    "C:\\Users\\William\\Desktop\\Fall 2024\\Internet Programing\\IP Project\\IP_Project\\VolunteerFireDeptTemplate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\VolunteerFireDeptTemplate.csproj",
+        "projectUniqueName": "C:\\Users\\William\\Desktop\\Fall 2024\\Internet Programing\\IP Project\\IP_Project\\VolunteerFireDeptTemplate.csproj",
         "projectName": "VolunteerFireDeptTemplate",
-        "projectPath": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\VolunteerFireDeptTemplate.csproj",
-        "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\obj\\",
+        "projectPath": "C:\\Users\\William\\Desktop\\Fall 2024\\Internet Programing\\IP Project\\IP_Project\\VolunteerFireDeptTemplate.csproj",
+        "packagesPath": "C:\\Users\\William\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\William\\Desktop\\Fall 2024\\Internet Programing\\IP Project\\IP_Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\William\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -36,9 +36,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -74,24 +73,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[8.0.11, 8.0.11]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.11, 8.0.11]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -100,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

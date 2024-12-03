@@ -1,0 +1,35 @@
+.faq-page {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.page-header {
+    font-size: 2.5rem;
+    color: #b30000; /* Match the site's theme */
+    margin-bottom: 30px;
+    text-align: center; /* Centering the FAQ title */
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h2 {
+    font-size: 1.2rem; /* Same size as the answers */
+    font-weight: bold;
+    color: #b30000;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1.3rem; /* Larger font for answers */
+    line-height: 1.6;
+    margin: 0;
+}
