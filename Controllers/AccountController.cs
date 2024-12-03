@@ -105,6 +105,9 @@ namespace VolunteerFireDeptTemplate.Controllers
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
                 new ClaimsPrincipal(claimsIdentity));
 
+            // Store the user name in TempData for the Welcome page
+            TempData["UserName"] = user.Name;
+
             // Pass the user’s name directly to the view
             return RedirectToAction("Welcome", "Account");
         }

@@ -7,8 +7,8 @@
     {
         public VolunteerDbContext(DbContextOptions<VolunteerDbContext> options): base(options) { }
 
-        public DbSet<Volunteer> Volunteers { get; set; }
-        public DbSet<User> Users { get; set; }
+        public DbSet<Volunteer> Volunteers { get; set; } = null!;
+        public DbSet<User> Users { get; set; } = null!;
     }
 }
 

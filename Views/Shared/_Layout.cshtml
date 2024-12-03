@@ -18,8 +18,13 @@
     </header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
         <div class="container">
-            <div class="collapse navbar-collapse justify-content-center">
-                <ul class="navbar-nav">
+            <!-- Navbar toggler for mobile view (Hamburger menu) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">  <!-- mx-auto centers the navbar items -->
                     <li class="nav-item"><a class="nav-link" asp-action="Index" asp-controller="Home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" asp-action="Join" asp-controller="Home">Join</a></li>
                     <li class="nav-item"><a class="nav-link" asp-action="About" asp-controller="Home">About Us</a></li> <!-- Updated link -->
