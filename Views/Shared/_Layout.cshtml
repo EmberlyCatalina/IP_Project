@@ -26,11 +26,11 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">  <!-- mx-auto centers the navbar items -->
                     <li class="nav-item"><a class="nav-link" asp-action="Index" asp-controller="Home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" asp-action="Join" asp-controller="Home">Join</a></li>
-                    <li class="nav-item"><a class="nav-link" asp-action="About" asp-controller="Home">About Us</a></li> <!-- Updated link -->
-                    <li class="nav-item"><a class="nav-link" asp-action="PhotoGallery" asp-controller="Home">Photo Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" asp-action="Contact" asp-controller="Home">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" asp-action="FAQ" asp-controller="Home">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-action="Index" asp-controller="Join">Join</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-action="Index" asp-controller="About">About Us</a></li> <!-- Updated link -->
+                    <li class="nav-item"><a class="nav-link" asp-action="Index" asp-controller="PhotoGallery">Photo Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-action="Index" asp-controller="Contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" asp-action="Index" asp-controller="FAQ">FAQ</a></li>
 
                     <!-- Conditionally render links based on authentication status -->
                     @if (User.Identity?.IsAuthenticated == true)
