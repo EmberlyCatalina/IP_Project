@@ -4,6 +4,8 @@
 
 <div class="form-container">
     <form method="post" action="/Account/Login">
+        @Html.AntiForgeryToken() <!-- Add AntiForgeryToken for CSRF protection -->
+
         <h2>Login</h2>
 
         <!-- Display validation errors from ModelState -->

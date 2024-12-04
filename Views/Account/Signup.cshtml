@@ -4,6 +4,8 @@
 
 <div class="form-container">
     <form method="post" action="/Account/SignUp">
+        @Html.AntiForgeryToken()  <!-- Add AntiForgeryToken here -->
+
         <h2>Sign Up</h2>
 
         <!-- Display success message after sign-up -->

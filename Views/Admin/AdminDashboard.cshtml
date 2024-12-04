@@ -1,0 +1,83 @@
+@{
+    ViewData["Title"] = "Admin Dashboard";
+    @using VolunteerFireDeptTemplate.Models  // Ensure the User model is included
+}
+
+<h2>Admin Dashboard</h2>
+<p>Welcome to the Admin Dashboard, <strong>@ViewBag.UserName</strong></p>
+
+<h3>All Users</h3>
+
+@if (ViewBag.Users != null)
+{
+    var users = ViewBag.Users as List<VolunteerFireDeptTemplate.Models.User>;
+
+    @if (users != null && users.Any())
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in users)
+                {
+                    <tr>
+                        <td>@user.Name</td>
+                        <td>@user.Email</td>
+                        <td>@user.Role</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No users found.</p>
+    }
+}
+
+<h3>All Volunteers</h3>
+
+@if (ViewBag.Volunteers != null)
+{
+    var volunteers = ViewBag.Volunteers as List<VolunteerFireDeptTemplate.Models.Volunteer>;
+
+    @if (volunteers != null && volunteers.Any())
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Experience</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var volunteer in volunteers)
+                {
+                    <tr>
+                        <td>@volunteer.FullName</td>
+                        <td>@volunteer.Email</td>
+                        <td>@volunteer.PhoneNumber</td>
+                        <td>@volunteer.Experience</td>
+                        <td>@volunteer.Availability</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No volunteers found.</p>
+    }
+}
+else
+{
+    <p>No volunteers found.</p>
+}

@@ -35,8 +35,22 @@
                     <!-- Conditionally render links based on authentication status -->
                     @if (User.Identity?.IsAuthenticated == true)
                     {
-                        <!-- Show Logout link when the user is logged in -->
-                        <li class="nav-item"><a class="nav-link" asp-action="Logout" asp-controller="Account">Log Out</a></li>
+                        <!-- Show Logout form when the user is logged in -->
+                        <li class="nav-item">
+                            <a class="nav-link" id="logoutLink">
+                                Log Out
+                            </a>
+                            <form id="logoutForm" method="post" action="/Account/Logout" style="display: none;">
+                                @Html.AntiForgeryToken()
+                            </form>
+
+                            <script>
+                                document.getElementById('logoutLink').addEventListener('click', function (e) {
+                                    e.preventDefault(); // Prevent the default link behavior
+                                    document.getElementById('logoutForm').submit(); // Submit the form
+                                });
+                            </script>
+                        </li>
                     }
                     else
                     {
