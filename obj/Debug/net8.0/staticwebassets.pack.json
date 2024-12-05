@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\VolunteerFireDeptTemplate.bundle.scp.css",
-      "PackagePath": "staticwebassets\\VolunteerFireDeptTemplate.qa0j8mvbhq.bundle.scp.css"
+      "PackagePath": "staticwebassets\\VolunteerFireDeptTemplate.ux223qbnfp.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\wwwroot\\css\\about.css",
@@ -15,6 +15,10 @@
     {
       "Id": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\wwwroot\\css\\contact.css",
       "PackagePath": "staticwebassets\\css\\contact.css"
+    },
+    {
+      "Id": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\wwwroot\\css\\dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dashboard.css"
     },
     {
       "Id": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\wwwroot\\css\\faq.css",

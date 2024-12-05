@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GLhkBG22Y1zbLPbmsAH8ezGlZJU6U2Yca0qsoG5RDiw=",
+  "Hash": "UOtC/SZm7ai1HaOeRmxG4oEc/5vjlzFlCJaFgsIFIFM=",
   "Source": "VolunteerFireDeptTemplate",
   "BasePath": "_content/VolunteerFireDeptTemplate",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "qa0j8mvbhq",
-      "Integrity": "vqeSQdz4naSCJEXH22JRCjSFJStkXmU5ZaSrGH2oHo0=",
+      "Fingerprint": "ux223qbnfp",
+      "Integrity": "YnazSMCItS5nhDfhSZtBMLPEfEXj5Oc43+zp0jOEJeg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\obj\\Debug\\net8.0\\scopedcss\\bundle\\VolunteerFireDeptTemplate.styles.css"
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "qa0j8mvbhq",
-      "Integrity": "vqeSQdz4naSCJEXH22JRCjSFJStkXmU5ZaSrGH2oHo0=",
+      "Fingerprint": "ux223qbnfp",
+      "Integrity": "YnazSMCItS5nhDfhSZtBMLPEfEXj5Oc43+zp0jOEJeg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\VolunteerFireDeptTemplate.bundle.scp.css"
@@ -94,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "qlhx1cyeu9",
-      "Integrity": "Xsj6vBuwXm42owJakzonGmxZqL/lcfPAYdQZLmn8i5k=",
+      "Fingerprint": "khny5c9jg7",
+      "Integrity": "mC9lVvSWkcSo1QElaJLKxKg+CGq8xdjp2X4ljrB8Mnk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\account.css"
@@ -120,6 +120,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\contact.css"
+    },
+    {
+      "Identity": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\wwwroot\\css\\dashboard.css",
+      "SourceId": "VolunteerFireDeptTemplate",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\wwwroot\\",
+      "BasePath": "_content/VolunteerFireDeptTemplate",
+      "RelativePath": "css/dashboard#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "khny5c9jg7",
+      "Integrity": "mC9lVvSWkcSo1QElaJLKxKg+CGq8xdjp2X4ljrB8Mnk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
     },
     {
       "Identity": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\wwwroot\\css\\faq.css",
@@ -1757,11 +1778,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Xsj6vBuwXm42owJakzonGmxZqL/lcfPAYdQZLmn8i5k=\""
+          "Value": "\"mC9lVvSWkcSo1QElaJLKxKg+CGq8xdjp2X4ljrB8Mnk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Dec 2024 17:25:06 GMT"
+          "Value": "Thu, 05 Dec 2024 02:37:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1771,12 +1792,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Xsj6vBuwXm42owJakzonGmxZqL/lcfPAYdQZLmn8i5k="
+          "Value": "sha256-mC9lVvSWkcSo1QElaJLKxKg+CGq8xdjp2X4ljrB8Mnk="
         }
       ]
     },
     {
-      "Route": "css/account.qlhx1cyeu9.css",
+      "Route": "css/account.khny5c9jg7.css",
       "AssetFile": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\wwwroot\\css\\account.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1794,11 +1815,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Xsj6vBuwXm42owJakzonGmxZqL/lcfPAYdQZLmn8i5k=\""
+          "Value": "\"mC9lVvSWkcSo1QElaJLKxKg+CGq8xdjp2X4ljrB8Mnk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Dec 2024 17:25:06 GMT"
+          "Value": "Thu, 05 Dec 2024 02:37:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1808,7 +1829,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qlhx1cyeu9"
+          "Value": "khny5c9jg7"
         },
         {
           "Name": "label",
@@ -1816,7 +1837,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Xsj6vBuwXm42owJakzonGmxZqL/lcfPAYdQZLmn8i5k="
+          "Value": "sha256-mC9lVvSWkcSo1QElaJLKxKg+CGq8xdjp2X4ljrB8Mnk="
         }
       ]
     },
@@ -1899,6 +1920,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-CCqZYShLhItGJxUhloXi3c4gzYlkhilPNtzT2DydQX4="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.css",
+      "AssetFile": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\wwwroot\\css\\dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1527"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mC9lVvSWkcSo1QElaJLKxKg+CGq8xdjp2X4ljrB8Mnk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 02:30:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mC9lVvSWkcSo1QElaJLKxKg+CGq8xdjp2X4ljrB8Mnk="
+        }
+      ]
+    },
+    {
+      "Route": "css/dashboard.khny5c9jg7.css",
+      "AssetFile": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\wwwroot\\css\\dashboard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1527"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mC9lVvSWkcSo1QElaJLKxKg+CGq8xdjp2X4ljrB8Mnk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 02:30:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "khny5c9jg7"
+        },
+        {
+          "Name": "label",
+          "Value": "css/dashboard.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mC9lVvSWkcSo1QElaJLKxKg+CGq8xdjp2X4ljrB8Mnk="
         }
       ]
     },
@@ -7907,11 +8010,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vqeSQdz4naSCJEXH22JRCjSFJStkXmU5ZaSrGH2oHo0=\""
+          "Value": "\"YnazSMCItS5nhDfhSZtBMLPEfEXj5Oc43+zp0jOEJeg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 27 Nov 2024 18:03:10 GMT"
+          "Value": "Thu, 05 Dec 2024 02:43:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7921,97 +8024,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vqeSQdz4naSCJEXH22JRCjSFJStkXmU5ZaSrGH2oHo0="
-        }
-      ]
-    },
-    {
-      "Route": "VolunteerFireDeptTemplate.qa0j8mvbhq.bundle.scp.css",
-      "AssetFile": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\VolunteerFireDeptTemplate.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1143"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vqeSQdz4naSCJEXH22JRCjSFJStkXmU5ZaSrGH2oHo0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 27 Nov 2024 18:03:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "qa0j8mvbhq"
-        },
-        {
-          "Name": "label",
-          "Value": "VolunteerFireDeptTemplate.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-vqeSQdz4naSCJEXH22JRCjSFJStkXmU5ZaSrGH2oHo0="
-        }
-      ]
-    },
-    {
-      "Route": "VolunteerFireDeptTemplate.qa0j8mvbhq.styles.css",
-      "AssetFile": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\obj\\Debug\\net8.0\\scopedcss\\bundle\\VolunteerFireDeptTemplate.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1143"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vqeSQdz4naSCJEXH22JRCjSFJStkXmU5ZaSrGH2oHo0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 27 Nov 2024 18:03:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "qa0j8mvbhq"
-        },
-        {
-          "Name": "label",
-          "Value": "VolunteerFireDeptTemplate.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-vqeSQdz4naSCJEXH22JRCjSFJStkXmU5ZaSrGH2oHo0="
+          "Value": "sha256-YnazSMCItS5nhDfhSZtBMLPEfEXj5Oc43+zp0jOEJeg="
         }
       ]
     },
@@ -8034,11 +8047,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vqeSQdz4naSCJEXH22JRCjSFJStkXmU5ZaSrGH2oHo0=\""
+          "Value": "\"YnazSMCItS5nhDfhSZtBMLPEfEXj5Oc43+zp0jOEJeg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 27 Nov 2024 18:03:10 GMT"
+          "Value": "Thu, 05 Dec 2024 02:43:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8048,7 +8061,97 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vqeSQdz4naSCJEXH22JRCjSFJStkXmU5ZaSrGH2oHo0="
+          "Value": "sha256-YnazSMCItS5nhDfhSZtBMLPEfEXj5Oc43+zp0jOEJeg="
+        }
+      ]
+    },
+    {
+      "Route": "VolunteerFireDeptTemplate.ux223qbnfp.bundle.scp.css",
+      "AssetFile": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\VolunteerFireDeptTemplate.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YnazSMCItS5nhDfhSZtBMLPEfEXj5Oc43+zp0jOEJeg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 02:43:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ux223qbnfp"
+        },
+        {
+          "Name": "label",
+          "Value": "VolunteerFireDeptTemplate.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YnazSMCItS5nhDfhSZtBMLPEfEXj5Oc43+zp0jOEJeg="
+        }
+      ]
+    },
+    {
+      "Route": "VolunteerFireDeptTemplate.ux223qbnfp.styles.css",
+      "AssetFile": "C:\\Users\\ander\\OneDrive - Texas A&M University-Corpus Christi\\Documents\\FALL2024\\Internet Programming\\Group_Project\\IP_Project\\obj\\Debug\\net8.0\\scopedcss\\bundle\\VolunteerFireDeptTemplate.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YnazSMCItS5nhDfhSZtBMLPEfEXj5Oc43+zp0jOEJeg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 02:43:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ux223qbnfp"
+        },
+        {
+          "Name": "label",
+          "Value": "VolunteerFireDeptTemplate.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YnazSMCItS5nhDfhSZtBMLPEfEXj5Oc43+zp0jOEJeg="
         }
       ]
     }

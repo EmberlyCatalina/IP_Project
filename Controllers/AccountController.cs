@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using VolunteerFireDeptTemplate.Database;
 using VolunteerFireDeptTemplate.Models;
@@ -36,11 +37,6 @@ namespace VolunteerFireDeptTemplate.Controllers
         {
             if (!ModelState.IsValid)
             {
-                foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
-                {
-                    // Log errors to check what's wrong
-                    Console.WriteLine(error.ErrorMessage);
-                }
                 return View(); // Return to view if there are validation errors
             }
 
@@ -108,11 +104,6 @@ namespace VolunteerFireDeptTemplate.Controllers
         {
             if (!ModelState.IsValid)
             {
-                // Log the validation errors
-                foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
-                {
-                    Console.WriteLine(error.ErrorMessage);
-                }
                 return View(); // Stay on the same page if there are validation errors
             }
 
@@ -145,15 +136,69 @@ namespace VolunteerFireDeptTemplate.Controllers
                 return RedirectToAction("AdminDashboard", "Admin"); // Admin Dashboard
             }
 
-            return RedirectToAction("Welcome", "Account"); // Regular user welcome page
+            return RedirectToAction("UserDashboard", "Account"); // Regular user dashboard
         }
 
-        // GET: /Account/Welcome
-        public IActionResult Welcome()
+        // GET: /Account/UserDashboard
+        [HttpGet]
+        [Authorize]
+        public IActionResult UserDashboard()
         {
-            // Pass the name from TempData to the view
-            ViewBag.UserName = TempData["UserName"]?.ToString();
             return View();
+        }
+
+        // POST: /Account/ChangePassword
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize]
+        public async Task<IActionResult> ChangePassword(string currentPassword, string newPassword, string confirmPassword)
+        {
+            var userId = User.FindFirstValue("UserId");
+            var user = _dbContext.Users.FirstOrDefault(u => u.Id.ToString() == userId);
+
+            if (user == null)
+            {
+                ModelState.AddModelError(string.Empty, "User not found.");
+                return View("UserDashboard");
+            }
+
+            // Verify current password
+            var passwordVerificationResult = _passwordHasher.VerifyHashedPassword(user, user.Password, currentPassword);
+            if (passwordVerificationResult == PasswordVerificationResult.Failed)
+            {
+                ModelState.AddModelError(string.Empty, "Current password is incorrect.");
+                return View("UserDashboard");
+            }
+
+            // Validate that new password matches confirm password
+            if (newPassword != confirmPassword)
+            {
+                ModelState.AddModelError(string.Empty, "New password and confirm password do not match.");
+                return View("UserDashboard");
+            }
+
+            // Validate new password against the required standards
+            if (!IsPasswordValid(newPassword))
+            {
+                ModelState.AddModelError(string.Empty, "New password must be at least 8 characters long, contain an uppercase letter, a number, and a special character.");
+                return View("UserDashboard");
+            }
+
+            // Hash the new password
+            user.Password = _passwordHasher.HashPassword(user, newPassword);
+
+            _dbContext.Update(user);
+            await _dbContext.SaveChangesAsync();
+
+            TempData["SuccessMessage"] = "Your password has been changed successfully!";
+            return RedirectToAction("UserDashboard");
+        }
+
+        // Helper method to validate the password
+        private bool IsPasswordValid(string password)
+        {
+            var regex = new Regex(@"^(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$");
+            return regex.IsMatch(password);
         }
 
         // POST: /Account/Logout
@@ -165,13 +210,6 @@ namespace VolunteerFireDeptTemplate.Controllers
 
             // Redirect to login page
             return RedirectToAction("Login");
-        }
-
-        // Helper method to validate the password
-        private bool IsPasswordValid(string password)
-        {
-            var regex = new Regex(@"^(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$");
-            return regex.IsMatch(password);
         }
     }
 }

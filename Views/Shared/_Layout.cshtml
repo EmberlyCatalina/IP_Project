@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/css/about.css" /> <!-- Added page-specific CSS -->
     <link rel="stylesheet" href="~/css/account.css" /> <!-- Added page-specific CSS -->
+    <link rel="stylesheet" href="~/css/dashboard.css" /> <!-- Added page-specific CSS -->
 </head>
 <body>
     <header class="header">
@@ -51,6 +52,14 @@
                                 });
                             </script>
                         </li>
+
+                        <!-- User Dashboard Link (only visible to regular users) -->
+                        @if (!User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-action="UserDashboard" asp-controller="Account">User Dashboard</a>
+                            </li>
+                        }
                     }
                     else
                     {

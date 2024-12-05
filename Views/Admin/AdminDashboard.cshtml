@@ -77,7 +77,35 @@
         <p>No volunteers found.</p>
     }
 }
-else
+
+<!-- Password Change Section -->
+<h3>Change Password</h3>
+
+<form method="post" action="/Admin/ChangePassword">
+    @Html.AntiForgeryToken() <!-- Prevent CSRF attacks -->
+
+    <div class="form-group">
+        <label for="oldPassword">Old Password:</label>
+        <input type="password" id="oldPassword" name="oldPassword" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label for="newPassword">New Password:</label>
+        <input type="password" id="newPassword" name="newPassword" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label for="confirmPassword">Confirm New Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Change Password</button>
+</form>
+
+<!-- Display success message after password change -->
+@if (TempData["SuccessMessage"] != null)
 {
-    <p>No volunteers found.</p>
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
 }
